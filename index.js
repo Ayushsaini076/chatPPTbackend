@@ -20,7 +20,7 @@ const app = express();
 app.use(cors({
     allowedHeaders: ['Content-Type', 'Authorization'],
 }))
-const port = process.env.port || 3001;
+const port = process.env.PORT || 3001;
 app.use(bodyparser.json());
 
 app.post('/',async (req,res)=>{
